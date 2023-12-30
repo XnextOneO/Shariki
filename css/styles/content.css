@@ -1,0 +1,256 @@
+.content {
+    margin: 0 auto;
+    width: 1315px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+
+.block-name {
+    font-size: 48px;
+}
+
+.see-more {
+    background: #2BB1B4;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        background: #108C8E;
+    }
+}
+
+.category div {
+    padding: 0;
+}
+
+.test {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel {
+    margin-bottom: 80px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.category-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.price {
+    display: flex;
+    gap: 8px;
+}
+
+.liders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 20px;
+}
+
+.old-price {
+    text-decoration-line: line-through;
+    color: gray;
+}
+
+.add-to-trash-button {
+    background: #2BB1B4;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 20px;
+
+    &:hover {
+        background: #108C8E;
+    }
+}
+
+.card-title-liders {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.left-absolute-icon {
+    top: 15px;
+    left: 15px;
+}
+
+.right-absolute-icon {
+    top: 15px;
+    left: 230px;
+}
+
+.download-more {
+    width: 12rem;
+    background: #2BB1B4;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 20px;
+
+    &:hover {
+        background: #108C8E;
+    }
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.questions-form {
+    display: flex;
+}
+
+.questions-title {
+    font-size: 48px;
+}
+
+.main__block:hover, .main__block:focus, .main__block:active{
+    border-radius: 18px;
+}
+
+.main__block--down {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.main__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    border-radius: 18px;
+    margin-top: 5px;
+}
+
+.main__block--text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__block--text p {
+    font-family: Euclid Circular A, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.show-low-resolution{
+    display: none;
+}
+
+.test-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:1200px) {
+    .content {
+        padding-top: 0px;
+    }
+
+    .category-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .category-title {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 12px;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .kill-low-resolution {
+        display: none;
+    }
+    .show-low-resolution {
+        display: flex;
+        white-space: nowrap;
+        margin-top: 20px;
+    }
+
+
+    .category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .block-name {
+        font-size: 28px;
+    }
+    .category-content .card:nth-child(n+3) {
+        display: none;
+    }
+    .main__block {
+        width: 100%;
+    }
+    .card {
+        width: 30rem;
+    }
+}
