@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     var catalogButton = document.getElementById('catalogButton');
     var catalogContent = document.getElementById('catalogContent');
@@ -122,19 +121,19 @@ document.addEventListener('DOMContentLoaded', function () {
 /////////////////////////////
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const burgerMenuBtn = document.querySelector('.burger-menu-btn');
     const fullScreenMenu = document.querySelector('.full-screen-menu');
     const closeMenuBtn = document.querySelector('.close-menu-btn');
 
 
-    burgerMenuBtn.addEventListener('click', function() {
+    burgerMenuBtn.addEventListener('click', function () {
         fullScreenMenu.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
 
 
-    closeMenuBtn.addEventListener('click', function() {
+    closeMenuBtn.addEventListener('click', function () {
         fullScreenMenu.style.display = 'none';
         document.body.style.overflow = 'auto';
     });
