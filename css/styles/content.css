@@ -209,7 +209,7 @@
 
 @media screen and (max-width:1200px) {
     .content {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .category-content {
@@ -244,7 +244,7 @@
     .block-name {
         font-size: 28px;
     }
-    .category-content .card:nth-child(n+3) {
+    .category-content .hide-card:nth-child(n+3) {
         display: none;
     }
     .main__block {
