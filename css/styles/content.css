@@ -114,7 +114,7 @@
 
 .right-absolute-icon {
     top: 15px;
-    left: 230px;
+    left: 210px;
 }
 
 .download-more {
@@ -251,4 +251,19 @@
         width: 100%;
     }
 
+
+    .right-absolute-icon {
+        top: 15px;
+        left: 500px;
+        width: 60px;
+    }
+    .left-absolute-icon {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .right-absolute-icon{
+        left: 250px;
+    }
 }
