@@ -160,7 +160,7 @@ header {
 
 .search-content {
     position: fixed;
-    top: 120%;
+    top: 100%;
     left: 40%;
     display: none;
     background: white;
@@ -172,7 +172,7 @@ header {
 
 .catalog-content {
     position: fixed;
-    top: 120%;
+    top: 100%;
     left: 26%;
     display: none;
     background: white;
@@ -278,6 +278,13 @@ header {
     }
     .content-header-second-row {
         justify-content: flex-end;
+    }
+
+    .carousel-left-arrow{
+        display: none;
+    }
+    .carousel-right-arrow {
+        display: none;
     }
 }
 

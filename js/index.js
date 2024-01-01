@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function () {
-    var header = document.querySelector('header');
-    var contentHeader = document.querySelector('.content-header');
-    var headerTitle = document.querySelector('.header-title');
+    let header = document.querySelector('header');
+    let contentHeader = document.querySelector('.content-header');
+    let headerTitle = document.querySelector('.header-title');
 
     if (window.scrollY > header.offsetHeight) {
         contentHeader.style.top = '0';
@@ -17,8 +17,8 @@ window.addEventListener('scroll', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var selectHeader = document.getElementById('select-header');
-    var selectOptions = document.querySelector('.select-options');
+    let selectHeader = document.getElementById('select-header');
+    let selectOptions = document.querySelector('.select-options');
 
     selectHeader.addEventListener('click', function () {
         selectOptions.classList.toggle('show-options');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     selectOptions.addEventListener('click', function (e) {
         if (e.target.classList.contains('option')) {
-            var selectedValue = e.target.getAttribute('data-value');
+            let selectedValue = e.target.getAttribute('data-value');
             selectHeader.textContent = e.target.textContent;
             selectOptions.classList.remove('show-options');
             console.log('Выбрана дата: ' + selectedValue);
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 (() => {
-    var blocks = document.querySelectorAll(".main__block");
+    let blocks = document.querySelectorAll(".main__block");
     blocks.forEach((block) => {
         block.addEventListener("click", (e) => {
-            var slideBlock = block.querySelector(".main__block--down");
-            var arrow = block.querySelector(".arrow");
+            let slideBlock = block.querySelector(".main__block--down");
+            let arrow = block.querySelector(".arrow");
 
             if (!slideBlock.classList.contains('open')) {
                 slideBlock.classList.add('open');
@@ -55,12 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
 })();
 
 document.addEventListener('DOMContentLoaded', function () {
-    var searchInput = document.getElementById('searchInput');
-    var searchContent = document.getElementById('searchContent');
-    var catalogButton = document.getElementById('catalogButton');
+    let searchInput = document.getElementById('searchInput');
+    let searchContent = document.getElementById('searchContent');
+    let catalogButton = document.getElementById('catalogButton');
 
     searchInput.addEventListener('input', function () {
-        var searchText = searchInput.value.trim();
+        let searchText = searchInput.value.trim();
 
         if (searchText !== '') {
             searchContent.style.display = 'block';
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('click', function (event) {
-        var isClickInside = searchContent.contains(event.target);
-        var isClickInput = (event.target === searchInput);
-        var isClickCatalogButton = (event.target === catalogButton);
+        let isClickInside = searchContent.contains(event.target);
+        let isClickInput = (event.target === searchInput);
+        let isClickCatalogButton = (event.target === catalogButton);
 
         if (!isClickInside && !isClickInput && !isClickCatalogButton) {
             searchContent.style.display = 'none';
@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var catalogButton = document.getElementById('catalogButton');
-    var catalogContent = document.getElementById('catalogContent');
-    var catalogButtonIcon = catalogButton.querySelector('img');
+    let catalogButton = document.getElementById('catalogButton');
+    let catalogContent = document.getElementById('catalogContent');
+    let catalogButtonIcon = catalogButton.querySelector('img');
 
     catalogButton.addEventListener('click', function (event) {
         event.stopPropagation();
@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.addEventListener('click', function (event) {
-        var isClickInside = catalogContent.contains(event.target);
-        var isClickInput = (event.target === catalogButton);
+        let isClickInside = catalogContent.contains(event.target);
+        let isClickInput = (event.target === catalogButton);
 
         if (!isClickInside && !isClickInput) {
             catalogContent.style.display = 'none';
