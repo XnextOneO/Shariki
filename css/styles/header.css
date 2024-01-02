@@ -194,6 +194,10 @@ header {
     text-align: left;
     color: #164747;
 }
+.catalog-panel-content:hover {
+    color: #108C8E;
+    cursor: pointer
+}
 .catalog-panel-content p {
     margin-top: 10px;
 }
