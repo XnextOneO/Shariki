@@ -24,7 +24,6 @@
 }
 
 
-
 .burger-header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,7 @@
     padding-right: 10px
 }
 
-.navbar-burger ul, li , a {
+.navbar-burger ul, li, a {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -85,6 +84,14 @@
     align-items: center;
 }
 
+.navbar-burger ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar-burger li {
+    text-align: left;
+}
 
 @media (max-width: 1200px) {
     .burger-menu-btn {
