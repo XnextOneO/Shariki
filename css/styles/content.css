@@ -142,6 +142,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .questions-form {
@@ -164,6 +165,7 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    padding-top: 10px;
 
 }
 
@@ -185,6 +187,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #2BB1B4;
 }
 
 .main__block--text p {
@@ -217,6 +220,10 @@
 
 
 @media screen and (max-width:1200px) {
+    .questions {
+        width: 75%;
+    }
+
     .content {
         padding-top: 0;
     }

@@ -1,14 +1,14 @@
-footer {
-    margin-top: auto;
-}
+
 
 .footer-content {
-    width: 1215px;
+    width: 1316px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 20px;;
+    padding-top: 20px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
 .socseti {
@@ -67,16 +67,24 @@ footer{
     color: #164747;
 }
 
+.footer-nav ul {
+    padding: 0;
+}
 
 @media screen and (max-width:1200px) {
+
 .footer-content {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
+    width: 70%;
 }
     .footer-nav-wrapper {
         display: flex;
+    }
+
+    .footer-nav ul {
+        padding: 0;
     }
 
     .footer-first-row-info {
@@ -90,5 +98,6 @@ footer{
 @media screen and (max-width:992px) {
    .footer-content {
        flex-direction: column;
+       width: 50%;
    }
 }
