@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 80px;
     margin: 0 auto;
     gap: 20px;
 }
@@ -70,6 +70,12 @@ footer{
 .footer-nav ul {
     padding: 0;
 }
+@media screen and (max-width:1294px) {
+    .footer-content {
+        width: 90%;
+    }
+}
+
 
 @media screen and (max-width:1200px) {
 
@@ -78,6 +84,7 @@ footer{
     justify-content: center;
     align-items: baseline;
     width: 70%;
+    padding-top: 40px
 }
     .footer-nav-wrapper {
         display: flex;
