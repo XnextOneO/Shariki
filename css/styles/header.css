@@ -2,6 +2,16 @@ header {
     margin-bottom: 50px;
 }
 
+.testik {
+    padding-top: 0;
+    list-style: none;
+}
+
+.testik li {
+    padding: 0;
+    margin: 0;
+}
+
 .header-title {
     background: #108C8E;
     margin: 0;

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let contentHeader = document.querySelector('.content-header');
             let headerTitle = document.querySelector('.header-title');
 
-            contentHeader.style.top = '0';
+            contentHeader.style.top = '-30px';
             contentHeader.style.opacity = '1';
             headerTitle.style.opacity = '0';
             headerTitle.style.visibility = 'hidden';
