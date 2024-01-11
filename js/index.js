@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 (() => {
-    let blocks = document.querySelectorAll(".main__block");
+    let blocks = document.querySelectorAll(".main-block");
     blocks.forEach((block) => {
         block.addEventListener("click", (e) => {
-            let slideBlock = block.querySelector(".main__block--down");
+            let slideBlock = block.querySelector(".main-block__down");
             let arrow = block.querySelector(".arrow");
 
             if (!slideBlock.classList.contains('open')) {
@@ -67,62 +67,62 @@ document.addEventListener('DOMContentLoaded', function () {
 })();
 
 document.addEventListener('DOMContentLoaded', function () {
-    let searchInput = document.getElementById('searchInput');
-    let searchContent = document.getElementById('searchContent');
-    let catalogButton = document.getElementById('catalogButton');
+    let search__input = document.getElementById('search__input');
+    let search_content = document.getElementById('search-content');
+    let catalog__button = document.getElementById('catalog__button');
 
-    searchInput.addEventListener('input', function () {
-        let searchText = searchInput.value.trim();
+    search__input.addEventListener('input', function () {
+        let searchText = search__input.value.trim();
 
         if (searchText !== '') {
-            searchContent.style.display = 'block';
+            search_content.style.display = 'block';
         } else {
-            searchContent.style.display = 'none';
+            search_content.style.display = 'none';
         }
     });
 
     document.addEventListener('click', function (event) {
-        let isClickInside = searchContent.contains(event.target);
-        let isClickInput = (event.target === searchInput);
-        let isClickCatalogButton = (event.target === catalogButton);
+        let isClickInside = search-content.contains(event.target);
+        let isClickInput = (event.target === search__input);
+        let isClickcatalog__button = (event.target === catalog__button);
 
-        if (!isClickInside && !isClickInput && !isClickCatalogButton) {
-            searchContent.style.display = 'none';
+        if (!isClickInside && !isClickInput && !isClickcatalog__button) {
+            search_content.style.display = 'none';
         }
     });
 
-    catalogButton.addEventListener('click', function () {
-        searchContent.style.display = 'none';
+    catalog__button.addEventListener('click', function () {
+        search_content.style.display = 'none';
     });
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    let catalogButton = document.getElementById('catalogButton');
-    let catalogContent = document.getElementById('catalogContent');
-    let catalogButtonIcon = catalogButton.querySelector('img');
+    let catalog__button = document.getElementById('catalog__button');
+    let catalog_content_id = document.getElementById('catalog-content-id');
+    let catalog__buttonIcon = catalog__button.querySelector('img');
 
-    catalogButton.addEventListener('click', function (event) {
+    catalog__button.addEventListener('click', function (event) {
         event.stopPropagation();
 
-        if (catalogContent.style.display === 'block') {
-            catalogContent.style.display = 'none';
-            catalogButtonIcon.setAttribute('src', '../assets/icons/catalog-button-icon.svg');
+        if (catalog_content_id.style.display === 'block') {
+            catalog_content_id.style.display = 'none';
+            catalog__buttonIcon.setAttribute('src', '../assets/icons/catalog-button-icon.svg');
         } else {
-            catalogContent.style.display = 'block';
-            catalogButtonIcon.setAttribute('src', '../assets/icons/iconsclose.svg');
+            catalog_content_id.style.display = 'block';
+            catalog__buttonIcon.setAttribute('src', '../assets/icons/iconsclose.svg');
         }
     });
 
 
     document.addEventListener('click', function (event) {
-        let isClickInside = catalogContent.contains(event.target);
-        let isClickInput = (event.target === catalogButton);
+        let isClickInside = catalog_content_id.contains(event.target);
+        let isClickInput = (event.target === catalog__button);
 
         if (!isClickInside && !isClickInput) {
-            catalogContent.style.display = 'none';
+            catalog_content_id.style.display = 'none';
 
-            catalogButtonIcon.setAttribute('src', '../assets/icons/catalog-button-icon.svg');
+            catalog__buttonIcon.setAttribute('src', '../assets/icons/catalog-button-icon.svg');
         }
     });
 

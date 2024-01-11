@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/styles/header.css">
-    <link rel="stylesheet" href="css/styles/body.css">
-    <link rel="stylesheet" href="css/styles/footer.css">
-    <link rel="stylesheet" href="css/styles/content.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles/burger.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="">
 </head>
 <body>
 <header>
     <div class="header-title container-fluid">
         <span>Гелиевые шары и воздушные букеты с доставкой по г.Нягань</span>
     </div>
-    <div class="content-header container ">
-        <div class="header-first-row row    ">
-            <div class="d-xl-flex d-none header-first-row row">
+    <div class="content-header container">
+        <div class="header__first-row row">
+            <div class="d-xl-flex d-none header__first-row ">
                 <nav class="navbar col-lg-4 col-xl-4 ">
                     <ul class="testik">
                         <li><a href="#" class="active">Главная</a></li>
@@ -28,16 +32,16 @@
 
                     </ul>
                 </nav>
-                <div class="header-first-row-info col-lg-7 col-xl-6">
-                    <div class="header-first-row-info-location">
+                <div class="header__first-row__info col-lg-7 col-xl-6">
+                    <div class="header__first-row__info__location">
                         <img src="assets/icons/location.svg" alt="">
                         <span>г. Нягань, 1 мкр., 44 д.</span>
                     </div>
-                    <div class="header-first-row-info-phone">
+                    <div class="header__first-row__info-phone">
                         <img src="assets/icons/phone.svg" alt="">
                         <span>8-922-222-22-22</span>
                     </div>
-                    <button class="header-first-row-info-button">Оставить заявку</button>
+                    <button class="header__first-row__info__button">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -46,63 +50,63 @@
                 <img src="assets/icons/logo.svg" alt="">
             </div>
             <div class="content-header-second-row col-lg-9 col-md-3">
-                <button id="catalogButton" class="content-header-second-row-button testtt"><img
+                <button id="catalog__button" class="content-header-second-row-button media-display-none"><img
                         src="assets/icons/catalog-button-icon.svg" alt="">Каталог
                 </button>
-                <div id="catalogContent" class="catalog-content">
+                <div id="catalog-content-id" class="catalog-content-id">
                     <div class="container">
-                        <div class="catalog-panel-content ">
+                        <div class="catalog-content__content ">
                             <p>Для кого</p>
                             <img src="assets/icons/right-arrow-drop-menu.svg" alt="" class="arrow">
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>По событиям</p>
                             <img src="assets/icons/right-arrow-drop-menu.svg" alt="" class="arrow">
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Шары под потолок</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Коллекция героев</p>
                             <img src="assets/icons/right-arrow-drop-menu.svg" alt="" class="arrow">
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Бабл-боксы</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Букеты из шаров</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Оформление <br> и мини-фотозона</p>
                             <img src="assets/icons/right-arrow-drop-menu.svg" alt="" class="arrow">
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Коробка-сюрприз</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Небольшие связки шаров</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Наборы до 3000 руб</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Наборы до 2000 руб</p>
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Шары с вашей <br>надписью</p>
                             <img src="assets/icons/right-arrow-drop-menu.svg" alt="" class="arrow">
                         </div>
-                        <div class="catalog-panel-content">
+                        <div class="catalog-content__content">
                             <p>Аренда конструкций</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="content-header-second-row-search col-lg-8 col-md-8">
-                    <input id="searchInput" type="text" placeholder="Поиск в каталоге и на сайте">
-                    <button id="searchButton"><img src="assets/icons/search.svg" alt="">Найти</button>
+                    <input id="search__input" type="text" placeholder="Поиск в каталоге и на сайте">
+                    <button id="search__button"><img src="assets/icons/search.svg" alt="">Найти</button>
                 </div>
-                <div id="searchContent" class="search-content">
+                <div id="search-content" class="search-content">
                     <div class="category container">
                         <div class="category-block-drop-menu-in-search">
                             <a href="#" class="link-search">
@@ -124,7 +128,7 @@
                         </a>
                         <div class="my-2"><a href="#" class="link-search">
                             <div class="product-drop-menu-in-search-content">
-                                <img src="assets/product-drop-menu.png" alt="">
+                                <img src="assets/images/product-drop-menu.png" alt="">
                                 <div class="name-price-search-item">
                                     <span>Шары золотые с гелием сердца маме</span>
                                     <span>1 339 ₽</span>
@@ -133,7 +137,7 @@
                         </a></div>
                         <a href="#" class="link-search">
                             <div class="product-drop-menu-in-search-content">
-                                <img src="assets/product-drop-menu.png" alt="">
+                                <img src="assets/images/product-drop-menu.png" alt="">
                                 <div class="name-price-search-item">
                                     <span>Шары золотые с гелием сердца маме</span>
                                     <span>1 339 ₽</span>
@@ -205,31 +209,31 @@
     </div>
 </header>
 <div class="content container">
-    <div id="carouselExampleIndicators" class="carousel slide  mx-auto w-100 ">
+    <div id="carousel-example-indicators" class="carousel slide  mx-auto w-100 ">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#carousel-example-indicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#carousel-example-indicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#carousel-example-indicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/carousel.png" class="d-block w-100" alt="...">
+                <img src="assets/images/carousel.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="assets/carousel.png" class="d-block w-100" alt="...">
+                <img src="assets/images/carousel.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="assets/carousel.png" class="d-block w-100" alt="...">
+                <img src="assets/images/carousel.png" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-example-indicators"
                 data-bs-slide="prev">
             <img src="assets/icons/left-slider.svg" class="carousel-left-arrow" alt="Previous">
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-example-indicators"
                 data-bs-slide="next">
             <img src="assets/icons/right-slider.svg" class="carousel-right-arrow" alt="Next">
         </button>
@@ -237,7 +241,7 @@
 
     <div class="category container">
         <div class="category-title row justify-content-between align-items-center">
-            <div class="test-wrapper">
+            <div class="liders-wrapper">
                 <div class="col-4 block-name my-4 ">Категории</div>
                 <div class="col-3 test kill-low-resolution">
                     <button class="see-more">Смотреть еще <img src="assets/icons/right-arrow.svg" alt=""></button>
@@ -245,25 +249,25 @@
             </div>
             <div class="category-content ">
                 <div class="card rounded-5" style="width: 18rem">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Для кого</h5>
                     </div>
                 </div>
                 <div class="card rounded-5" style="width: 18rem">
-                    <img src="assets/imgsobitiya.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgsobitiya.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">По событиям</h5>
                     </div>
                 </div>
                 <div class="card rounded-5" style="width: 18rem">
-                    <img src="assets/imgpotolok.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgpotolok.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Шары под потолок</h5>
                     </div>
                 </div>
                 <div class="card rounded-5" style="width: 18rem">
-                    <img src="assets/imgheroes.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgheroes.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Коллекции героев</h5>
                     </div>
@@ -276,7 +280,7 @@
     </div>
     <div class="category container my-5 my-md-2">
         <div class="category-title row justify-content-between align-items-center">
-            <div class="test-wrapper">
+            <div class="liders-wrapper">
                 <div class="col-4 block-name my-4">Лидеры продаж</div>
                 <div class="col-3 test">
                     <button class="see-more kill-low-resolution">Смотреть еще <img src="assets/icons/right-arrow.svg"
@@ -289,15 +293,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders ">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -306,15 +310,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
+                    <button class="add-to-trash__button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
                             src="assets/icons/Group%2060plus.svg" alt=""></button>
                 </div>
                 <div class="card hide-card rounded-5" style="width: 18rem">
@@ -322,30 +326,30 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
                 <div class="card  hide-card position-relative rounded-5" style="width: 18rem">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -357,7 +361,7 @@
     </div>
     <div class="category container my-5 my-md-2">
         <div class="category-title row justify-content-between align-items-center">
-            <div class="test-wrapper">
+            <div class="liders-wrapper">
                 <div class="col-4 block-name my-4">Акции</div>
                 <div class="col-3 test">
                     <button class="see-more kill-low-resolution">Смотреть еще <img src="assets/icons/right-arrow.svg"
@@ -370,15 +374,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -387,15 +391,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
+                    <button class="add-to-trash__button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
                             src="assets/icons/Group%2060plus.svg" alt=""></button>
                 </div>
                 <div class="card hide-card rounded-5" style="width: 18rem">
@@ -403,30 +407,30 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
                 <div class="card rounded-5 hide-card position-relative" style="width: 18rem">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -438,7 +442,7 @@
     </div>
     <div class="category container my-5 my-md-2">
         <div class="category-title row justify-content-between align-items-center">
-            <div class="test-wrapper">
+            <div class="liders-wrapper">
                 <div class="col-5 block-name my-4">Смотрели недавно</div>
                 <div class="col-3 test">
                     <button class="see-more kill-low-resolution">Смотреть еще <img src="assets/icons/right-arrow.svg"
@@ -451,15 +455,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -468,15 +472,15 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
+                    <button class="add-to-trash__button"><img src="assets/icons/Vectorminus.svg" alt=""><span>1 шт</span><img
                             src="assets/icons/Group%2060plus.svg" alt=""></button>
                 </div>
                 <div class="card hide-card rounded-5" style="width: 18rem">
@@ -484,30 +488,30 @@
                          class="left-absolute-icon position-absolute ">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
                 <div class="card hide-card position-relative rounded-5" style="width: 18rem">
                     <img src="assets/icons/Tab_iconsright-absolute.svg" alt=""
                          class="right-absolute-icon position-absolute">
-                    <img src="assets/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
+                    <img src="assets/images/imgdlya-kogo.png" class="card-img-top rounded-top-5" alt="...">
                     <div class="card-body liders">
-                        <h5 class="card-title-liders">Для кого</h5>
+                        <h5 class="card__title-liders">Для кого</h5>
                         <div class="price">
                             <span>1 339 ₽</span>
                             <span class="old-price">1 339 ₽</span>
                         </div>
                     </div>
-                    <button class="add-to-trash-button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
+                    <button class="add-to-trash__button"><img src="assets/icons/Group%2055add-to-trash-icon.svg" alt="">В
                         корзину
                     </button>
                 </div>
@@ -519,111 +523,111 @@
         <img src="assets/icons/Vectordownload-more.svg" alt="">
     </button>
     <div class="questions">
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Как можно заказать шарики?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Сколько стоит доставка шаров?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Сколько времени летают шарики с гелием?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Сколько времени летают фольгированные шарики с гелием?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Что еще влияет на время полета воздушных шаров?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Когда нужно заказывать шарики?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Какое количество шаров заказать?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Сколько шаров помещается в автомобиль при самовывозе?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Воздушные шарики привезут связанные грузиком либо раздельно?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
             </div>
         </div>
-        <div class="main__block">
-            <div class="main__block--text">
+        <div class="main-block">
+            <div class="main-block__text">
                 <p>Входит ли в стоимость воздушных шариков лента и какой она длины?</p>
                 <img src="assets/icons/top-arrow.svg" alt="" class="arrow">
             </div>
-            <div class="main__block--down">
+            <div class="main-block__down">
                 Вы можете сделать заказ на сайте, с Вами свяжется сотрудник для уточнения деталей заказа. Если у вас
                 есть вопросы или Вам нужна консультация перед заказом, Вы также можете позвонить по указанному на сайте
                 номеру.
@@ -658,28 +662,28 @@
             </div>
         </div>
         <div class="footer-first-row-info  ">
-            <div class="header-first-row-info-location">
+            <div class="header__first-row__info__location">
                 <img src="assets/icons/location.svg" alt="">
                 <span>г. Нягань, 1 мкр., 44 д</span>
             </div>
-            <div class="header-first-row-info-phone">
+            <div class="header__first-row__info-phone">
                 <img src="assets/icons/phone.svg" alt="">
                 <span>+7 982 538-19-02</span>
             </div>
             <div class="socseti">
                 <div class="img-span">
-                    <span>Мы в соцсетях: </span>
-                    <img src="assets/icons/socialswatsapp.svg" alt="">
+                    <span>Мы в соцсетях:</span>
+                    <img src="assets/icons/socialswatsapp.svg" alt="" style="width: 40px;height: 40px">
                 </div>
-                <button class="header-first-row-info-button">Оставить заявку</button>
+                <button class="header__first-row__info__button">Оставить заявку</button>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.esm.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.esm.js"></script>
 <script src="js/index.js">
 </script>
 </body>
