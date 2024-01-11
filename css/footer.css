@@ -119,6 +119,7 @@ footer{
 
     .footer__change {
         width: 490px;
+        margin-bottom: 40px;
     }
     .socseti {
         flex-direction: column;

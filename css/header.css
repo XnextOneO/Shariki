@@ -103,7 +103,6 @@ header {
     cursor: pointer;
     font-family: Inter;
     font-weight: 600;
-    margin-bottom: 40px;
 
     &:hover {
         background: #108C8E;
