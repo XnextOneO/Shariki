@@ -14,7 +14,7 @@
 .socseti {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     white-space: nowrap;
     gap: 20px;
     margin-top: -8px
@@ -110,5 +110,18 @@ footer{
    .footer-content {
        flex-direction: column;
        width: 50%;
+       font-size: 20px;
    }
+
+    .footer-nav ul li a{
+        font-size: 20px;
+    }
+
+    .footer__change {
+        width: 490px;
+    }
+    .socseti {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
