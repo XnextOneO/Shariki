@@ -50,21 +50,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 (() => {
     let blocks = document.querySelectorAll(".main-block");
+
     blocks.forEach((block) => {
         block.addEventListener("click", (e) => {
             let slideBlock = block.querySelector(".main-block__down");
             let arrow = block.querySelector(".arrow");
 
             if (!slideBlock.classList.contains('open')) {
-                slideBlock.classList.add('open');
+                slideBlock.style.display = 'block';
+                slideBlock.style.maxHeight = slideBlock.scrollHeight + "px";
+
+
+                setTimeout(() => {
+                    slideBlock.style.transition = 'max-height 1s ease-out';
+                    slideBlock.style.maxHeight = '1000px';
+                }, 10);
+
                 arrow.classList.add('open');
             } else {
-                slideBlock.classList.remove('open');
+                slideBlock.style.transition = 'max-height 0.3s ease-out';
+                slideBlock.style.maxHeight = '0';
                 arrow.classList.remove('open');
+
+                setTimeout(() => {
+                    slideBlock.style.display = 'none';
+                }, 300);
             }
+
+            slideBlock.classList.toggle('open');
         });
     });
 })();
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     let search__input = document.getElementById('search__input');
