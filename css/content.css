@@ -257,6 +257,13 @@
     background-color: white !important;
 }
 
+.test-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px 0px #AA948F33;
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 1399px) {
     .right-absolute-icon {
         top: 15px;
@@ -266,7 +273,6 @@
 
 @media screen and (max-width: 1200px) {
     .questions {
-        width: 75%;
     }
 
     .content {
@@ -315,11 +321,53 @@
     }
 
 
+    .left-absolute-icon {
+        width: 100px;
+        top: 40px
+    }
     .right-absolute-icon {
-        top: 15px;
-        left: 220px;
+        width: 100px;
+        top: 40px;
+        left: 570px;
     }
 
+    .test-card {
+        width: 700px !important;
+        display: flex;
+    }
 
+    .card-body {
+        height: 150px;
+        background: white;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .card-title {
+        font-size: 32px;
+        padding-top: 60px;
+    }
+    .card__title-liders {
+        font-size: 32px;
+    }
+    .price {
+        font-size: 32px;
+    }
+    .add-to-trash__button {
+        font-size: 32px;
+        padding: 20px 30px;
+    }
+    .see-more {
+        font-size: 32px;
+        padding: 30px ;
+    }
+    .download-more{
+        font-size: 32px;
+        width: 20rem;
+        background: #2BB1B4;
+        border-radius: 100px;
+        padding: 20px 20px;
+
+    }
 }
 
