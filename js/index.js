@@ -83,8 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })();
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     let search__input = document.getElementById('search__input');
     let search_content = document.getElementById('search-content');
@@ -101,11 +99,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('click', function (event) {
-        let isClickInside = search-content.contains(event.target);
+        let isClickInsideSearch = search_content.contains(event.target);
         let isClickInput = (event.target === search__input);
         let isClickcatalog__button = (event.target === catalog__button);
 
-        if (!isClickInside && !isClickInput && !isClickcatalog__button) {
+        if (!isClickInsideSearch && !isClickInput && !isClickcatalog__button) {
             search_content.style.display = 'none';
         }
     });
@@ -113,6 +111,15 @@ document.addEventListener('DOMContentLoaded', function () {
     catalog__button.addEventListener('click', function () {
         search_content.style.display = 'none';
     });
+});
+
+document.addEventListener('click', function (event) {
+    let search_content = document.getElementById('search-content');
+    let isClickInsideSearch = search_content.contains(event.target);
+
+    if (!isClickInsideSearch) {
+        search_content.style.display = 'none';
+    }
 });
 
 
@@ -149,9 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/////////////////////////////
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const burgerMenuBtn = document.querySelector('.burger-menu-btn');
     const fullScreenMenu = document.querySelector('.full-screen-menu');
@@ -171,5 +175,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/////////////////////////////
 
